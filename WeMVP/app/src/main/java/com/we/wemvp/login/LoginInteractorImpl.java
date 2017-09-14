@@ -1,0 +1,28 @@
+package com.we.wemvp.login;
+
+/**
+ * Created by DaniRosas on 14/9/17.
+ */
+
+public class LoginInteractorImpl implements LoginInteractor {
+    private LoginRepository loginRepository;
+
+    public LoginInteractorImpl() {
+        this.loginRepository = new LoginRepositoryImpl();
+    }
+
+    @Override
+    public void doSignUp(final String email, final String password) {
+        loginRepository.signUp(email, password);
+    }
+
+    @Override
+    public void doSignIn(String email, String password) {
+        loginRepository.signIn(email, password);
+    }
+
+    @Override
+    public void checkAlreadyAuthenticated() {
+        loginRepository.checkAlreadyAuthenticated();
+    }
+}
