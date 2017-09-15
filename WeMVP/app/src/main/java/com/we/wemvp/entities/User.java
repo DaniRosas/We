@@ -1,4 +1,4 @@
-package com.we.wemvp.login.entities;
+package com.we.wemvp.entities;
 
 /**
  * Created by DaniRosas on 14/9/17.

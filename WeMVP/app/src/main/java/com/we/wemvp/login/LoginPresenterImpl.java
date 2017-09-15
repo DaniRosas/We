@@ -3,7 +3,7 @@ package com.we.wemvp.login;
 import com.we.wemvp.libs.EventBus;
 import com.we.wemvp.libs.GreenRobotEventBus;
 import com.we.wemvp.login.events.LoginEvent;
-import com.we.wemvp.login.ui.LoginView;
+import com.we.wemvp.login.ui.LoginContract;
 
 import org.greenrobot.eventbus.Subscribe;
 
@@ -11,13 +11,13 @@ import org.greenrobot.eventbus.Subscribe;
  * Created by DaniRosas on 14/9/17.
  */
 
-public class LoginPresenterImpl implements LoginPresenter {
+public class LoginPresenterImpl implements LoginContract.Presenter {
     EventBus eventBus;
-    LoginView loginView;
+    LoginContract.LoginView loginView;
     LoginInteractor loginInteractor;
 
 
-    public LoginPresenterImpl(LoginView loginView) {
+    public LoginPresenterImpl(LoginContract.LoginView loginView) {
         this.loginView = loginView;
         this.eventBus = GreenRobotEventBus.getInstance();
         this.loginInteractor = new LoginInteractorImpl();

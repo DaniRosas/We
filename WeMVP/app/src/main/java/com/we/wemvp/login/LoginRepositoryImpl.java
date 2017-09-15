@@ -11,9 +11,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 import com.we.wemvp.domain.FirebaseHelper;
+import com.we.wemvp.entities.User;
 import com.we.wemvp.libs.EventBus;
 import com.we.wemvp.libs.GreenRobotEventBus;
-import com.we.wemvp.login.entities.User;
 import com.we.wemvp.login.events.LoginEvent;
 
 /**

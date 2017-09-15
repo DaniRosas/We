@@ -8,4 +8,7 @@
   <color name="secondaryDarkColor">#005662</color>
   <color name="primaryTextColor">#036e78</color>
   <color name="secondaryTextColor">#ffffff</color>
+
+  <color name="disabled_color">#44000000</color>
+  <color name="error_color">#E7492E</color>
 </resources>
